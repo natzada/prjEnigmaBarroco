@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    scroll-snap-type: none;
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    transition: .5s;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+header.rolagem{
+    background-color: #1d0b0af9;
+    padding: 1px 4%;
+    height: 100px;
+}
+
+header.rolagem a, header.rolagem i{
+    color: #54121E;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#header-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#title {
+    font-size: 30px;
+    text-align: center;
+    color: #b3b3b3;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+header ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.banner {
+    background: #1F1514 url(assets/fundo.png) repeat-x;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner-content {
+    text-align: left;
+    margin: 50px;
+    color: #d7ccc8;
+}
+
+.nav {
+    margin: 10px 0;
+}
+
+.nav-items {
+    color: #b3b3b3;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.slogan-title {
+    margin-top: 10px;
+    font-size: 60px;
+    color: #d9d6d6;
+}
+
+.slogan-text {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+article {
+    display: flex;    
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* Seção principal */
+.container {
+    padding: 20px;
+    text-align: center;
+    background-color: #1F1514;
+}
+
+/* Estilo do contexto */
+.context-container {
+    background-color: #91656125;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.context-title {
+    color: #8f6756fd;
+    margin: 10px;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 5000;
+    font-style: oblique;
+}
+
+.context-text {
+    margin: 20px;
+    text-align: left;
+    font-size: 20px;
+    color: #b3b3b3;
+}
+
+
+/* Seção de Características */
+.characteristics-container {
+    background-color: #91656125;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.characteristics-img {
+    width: 800px;
+}
+
+.characteristics-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    margin: 10px;
+}
+
+
+.characteristics-title {
+    color: #8f6756fd;
+    font-size: 40px;
+    font-weight: 5000;
+    margin-bottom: 20px;
+}
+
+.characteristics-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.characteristics-content article {
+    background-color: #5d403725;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: #d7ccc8;
+}
+
+.characteristics-content h2 {
+    font-size: 18px;
+    color: #8f6756fd;
+    margin-bottom: 8px;
+}
+
+.characteristics-content p {
+    font-size: 16px;
+    color: #b3b3b3;
+    max-width: 380px;
+    line-height: 1.4;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.authors {
+    padding: 40px;
+    background-color: #1F1514;
+}
+
+.author-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linhas se necessário */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards */
+}
+
+.author-card {
+    background-color: #5d4037;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Largura fixa para todos os cards */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.author-card:hover {
+    transform: scale(1.05);
+    background-color: #8f6756fd;
+}
+
+.author-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.author-card h2 {
+    font-size: 18px;
+    color: #d7ccc8;
+    margin-bottom: 10px;
+}
+
+.author-card p {
+    font-size: 14px;
+    color: #b3b3b3;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.author-card button {
+    background-color: #8f6756fd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.author-card button:hover {
+    background-color: #54121E;
+}
+
+
+/* Seção do Jogo */
+.game {
+    background-color: #5d403725;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.game-img {
+    width: 600px;
+    height: 300px;
+}
+
+.game-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-title {
+    font-size: 36px;
+    color: #8f6756fd;
+    margin-bottom: 20px;
+}
+
+.game-text {
+    font-size: 18px;
+    color: #b3b3b3;
+    text-align: justify;
+}
+
+button {
+    background-color: #8f6756fd;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #5d4037;
+}
+
+a {
+    text-decoration: none;
+    color: #1F1514;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #3e2a28;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    background-size: cover;
+}
+
+
+@media (max-width: 768px) {
+    .card-list {
+        gap: 15px;
+    }
+
+    .card-item {
+        flex: 0 0 200px; /* Reduz a largura dos cards em telas menores */
+        padding: 10px;
+    }
+
+    .card-item h2 {
+        font-size: 18px;
+    }
+
+    .card-item p {
+        font-size: 12px;
+    }
+
+    .card-item button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

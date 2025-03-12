@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat', 'Sans-serif';
+    color: white;
+}
+
+.destaque {
+    color: #54121E;
+}
+
+body {
+    background: #1F1514 url(assets/fundo.png) repeat-x;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+}
+
+#title {
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+.card__container{
+    display: flex;
+    row-gap: 3.5rem;
+}
+
+.card__article {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 100%;
+    height: 480px; /* Ajuste esta altura conforme necessário */
+    object-fit: cover; 
+    border-radius: 1.5rem;
+}
+
+.card__data {
+    width: 250px;
+    background-color: #54121E;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 21%, 81%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -13rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s ;
+}
+
+.card__text {
+    display: block;
+    font-size: .813rem;
+    margin-bottom: .25rem;
+}
+
+.card__title {
+    font-size: .1.25rem;
+    font-weight: 500;
+    color: #fcfcfc;
+    margin-bottom: .75rem;
+}
+
+.card__button {
+    text-decoration: none;
+    font-size: .813rem;
+    font-weight: 500;
+    color: #bfbebe;
+}
+
+.card__button:hover {
+    text-decoration: underline;
+    color: #fdfdfd;
+}
+
+.card__article:hover .card__data {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+.card__article:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article:not(:hover) .card__data{
+    animation: remove-data 1s forwards;
+}
+
+#awnser__input {
+    width: 500px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid #54121E;
+    background-color: #1f151452;
+}
+
+.awnser__container {
+    margin: 10px;
+}
+
+.awnser__button {
+    background-color: #54121E;
+    position: relative;
+    bottom: -5px;
+    right: 8%;
+    height: 31px;
+    width: 40px;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+#confetes-gif {
+    height: 100vh;
+}
+
+@keyframes show-data{
+    50% {
+        transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+
+.intro-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.intro-image img {
+    max-width: 100%;
+    max-height: 100%;
+}

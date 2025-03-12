@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="level1.css">
+    <link rel="shortcut icon" href="assets/detetive favicon.png" type="image/x-icon">
+    <title>LEVEL 1</title>
+</head>
+<body>
+    <div id="background">
+        <div id="introImage" class="intro-image">
+            <img src="assets/1 - padre.png" alt="Introdução">
+            <img src="assets/2 - padre.png" alt="Introdução">
+
+        </div>
+        <!-- Palavras ocultas para arrastar -->
+        <div id="hidden-words">
+            <div class="container">
+                <h1 id="title">COMPLETE A FRASE</h1>
+            </div>
+        <span class="hidden-word" draggable="true" id="Palavra1">religioso</span>
+        <span class="hidden-word" draggable="true" id="Palavra2">artístico</span>
+        <span class="hidden-word" draggable="true" id="Palavra3">cultural</span>
+        <span class="hidden-word" draggable="true" id="Palavra4">exuberância</span>
+        <span class="hidden-word" draggable="true" id="Palavra5">detalhes</span>
+        <span class="hidden-word" draggable="true" id="Palavra6">sociais</span>
+        <span class="hidden-word" draggable="true" id="Palavra7">políticas</span>
+        <span class="hidden-word" draggable="true" id="Palavra8">religiosas</span>
+        <span class="hidden-word" draggable="true" id="Palavra9">Reforma Protestante</span>
+        <span class="hidden-word" draggable="true" id="Palavra10">Contrarreforma</span>
+    </div>
+    </div>
+    <div id="code-area">
+        "O Barroco foi um movimento
+        <div class="code-slot destaque" data-correct-word="religioso">______</div> ,
+        <div class="code-slot destaque" data-correct-word="artístico">______</div> e
+        <div class="code-slot destaque" data-correct-word="cultural">______</div>
+        que floresceu na Europa entre o final do século XVI e o início do século XVIII. Ele se destacou por sua grandiosidade,
+        <div class="code-slot destaque" data-correct-word="exuberância">_______</div> e atenção aos
+        <div class="code-slot destaque" data-correct-word="detalhes">______</div> , refletindo as profundas mudanças
+        <div class="code-slot destaque" data-correct-word="sociais">______</div> ,
+        <div class="code-slot destaque" data-correct-word="políticas">______</div> e
+        <div class="code-slot destaque" data-correct-word="religiosas">_______</div> da época. 
+        Esse movimento ganhou vida a partir das tensões provocadas pela 
+        <div class="code-slot destaque" data-correct-word="Reforma Protestante" id="slotMaior">______</div> e pela resposta da Igreja Católica através da
+        <div class="code-slot destaque" data-correct-word="Contrarreforma">______</div> <span></span>  "
+
+        <!-- Mais slots de código -->
+    </div>
+    <script src="level1.js"></script>
+</body>
+</html>

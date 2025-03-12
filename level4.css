@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat', 'Sans-serif';
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1F1514 url(assets/fundo.png) repeat-x;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.background__map {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+}
+
+#image__map__back {
+    width: 100%;
+}
+
+#image__points {
+    position: absolute;
+    top: 90px;
+    left: 55px;
+    width: 450px;
+    max-width: 500px;
+    z-index: 1;
+}
+
+#image__map {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    max-width: 800px;   
+    z-index: 1;
+}
+
+.authors {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.author1 {
+    position: absolute;
+    top: 310px;
+    left: 630px;
+    width: 60px; /* Definir largura da imagem */
+}
+
+.author1:hover {
+    cursor: pointer;
+    width: 200px;
+}
+
+.author2 {
+    position: absolute;
+    top: 200px;
+    left: 570px;
+    width: 60px; /* Definir largura da imagem */
+}
+
+.author2:hover {
+    cursor: pointer;
+    width: 200px;
+}
+
+.author3 {
+    position: absolute;
+    top: 270px;
+    left: 770px;
+    width: 60px; /* Definir largura da imagem */
+}
+
+.author3:hover {
+    cursor: pointer;
+    width: 200px;
+}
+
+.author4 {
+    position: absolute;
+    top: 330px;
+    left: 910px;
+    width: 60px; /* Definir largura da imagem */
+}
+
+.author4:hover {
+    cursor: pointer;
+    width: 200px;
+}
+
+#answer__input {
+    width: 500px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid #54121E;
+    background-color: #1f151452;
+    z-index: 3;
+}
+
+.answer__container {
+    margin: 40px;
+    position: relative;
+    z-index: 3;
+}
+
+.answer__button {
+    background-color: #54121E;
+    position: relative;
+    bottom: -5px;
+    right: 45px;
+    height: 31px;
+    width: 40px;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#confetes-gif {
+    height: 100vh;
+}
+
+.intro-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.intro-image img {
+    max-width: 100%;
+    max-height: 100%;
+}

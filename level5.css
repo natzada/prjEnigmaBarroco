@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat', 'Sans-serif';
+    color: white;
+}
+
+.destaque {
+    color: #54121E;
+}
+
+body {
+    background: #1F1514 url(assets/fundo.png) repeat-x;
+    background-size: cover;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.wordSearch {
+    display: inline-block;
+    margin-top: 20px;
+    user-select: none; /* Evita a seleção de texto ao arrastar */
+}
+.wordSearch table {
+    border-collapse: collapse;
+    margin: auto;
+}
+.wordSearch td {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    cursor: pointer;
+}
+.highlight {
+    background-color: #ffffff3f;
+}
+.found {
+    background-color: #54121E;
+}
+.words {
+    margin-top: 20px;
+}
+.word {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+.found-word {
+    text-decoration: line-through;
+    color: #7f2838;
+}
+
+#confetes-gif {
+    height: 100vh;
+}
+
+.intro-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.intro-image img {
+    max-width: 100%;
+    max-height: 100%;
+}

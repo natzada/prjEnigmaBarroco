@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    scroll-snap-type: none;
+}
+
+/* Padronização para todas as imagens */
+img {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 300px; /* Define um limite máximo para a largura */
+    height: auto; /* Mantém a proporção original da imagem */
+    object-fit: cover; /* Garante que as imagens sejam cortadas proporcionalmente */
+    border-radius: 8px; /* Bordas arredondadas para todas as imagens */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar as imagens */
+    margin-bottom: 15px; /* Espaço inferior entre a imagem e o próximo elemento */
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    z-index: 100; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.header-container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+header.rolagem {
+    background-color: #1d0b0af9; /* Fundo semitransparente ao rolar */
+    padding: 1px 4%;
+    height: 100px; /* Redução da altura ao rolar */
+}
+
+header.rolagem a,
+header.rolagem i {
+    color: #54121E; /* Ajusta a cor dos links durante a rolagem */
+}
+
+/* Flexbox para alinhar o conteúdo no cabeçalho */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-icon {
+    width: 50px; /* Tamanho padrão do ícone */
+    height: auto;
+}
+
+#title {
+    font-size: 28px;
+    color: #b3b3b3;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #8f6756fd; /* Efeito ao passar o mouse sobre os links */
+}
+
+
+
+
+/* Banner */
+.banner {
+    background: #1F1514 url(assets/fundo.png) center no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #d9d6d6;
+}
+
+.banner p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #d7ccc8;
+}
+
+/* Seção do Autor */
+.author-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #5d403725;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.author-section h2 {
+    color: #8f6756fd;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.author-section p {
+    color: #b3b3b3;
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Principais Obras */
+.works-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #5d403725;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.works-section h3 {
+    color: #8f6756fd;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.works-list {
+    list-style: none;
+    padding: 0;
+}
+
+.works-list li {
+    margin-bottom: 15px;
+    background-color: #8f675625;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #b3b3b3;
+    font-size: 16px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #3e2723;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Botão de Ação */
+button {
+    background-color: #8f6756fd;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    margin: 15px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5d4037;
+}

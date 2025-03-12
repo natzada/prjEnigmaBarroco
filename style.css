@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Montserrat', 'Sans-serif';
+}
+
+.destaque {
+    color: #54121E;
+}
+
+body {
+    background: #1F1514 url(assets/fundo.png) repeat-x;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+    flex-direction: column;
+}
+
+#title, #title-white {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+#title {
+    color: #B80003;
+    font-size: 50px;
+}
+
+#title-white {
+    color: white;
+}
+
+#next-btn {
+    background-color: #54121E;
+    position: fixed;
+    bottom: 10px;
+    right: 70px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden-word {
+    background-color: rgba(0, 0, 0, 0.118);
+    color: #1F1514;
+    padding: 5px;
+    margin: 5px;
+    cursor: grab;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.hidden-word:active {
+    cursor: grabbing;
+}
+
+.code-slot {
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    border-bottom: 2px solid white;
+    margin: 0 5px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+#name {
+    background-color: #1f151447;
+    border: 1px solid #54121E;
+    color: #B80003;
+    border-radius: 8px;
+    width: 30%;
+    height: 5%;
+
+}
+
+#page2, a {
+    background-color: #54121E;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Estilos para telas menores, como celulares */
+@media (max-width: 768px) {
+    body {
+        background-size: contain repeat-y; /* Ajusta o fundo para caber melhor */
+    }
+
+    .container {
+        height: auto; /* Permite mais espaço em telas menores */
+        padding: 20px;
+    }
+
+    #title, #title-white {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    #next-btn {
+        bottom: 20px;
+        right: 20px;
+        width: calc(100% - 40px); /* Botão ocupa maior parte da largura */
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .hidden-word, .code-slot {
+        width: auto; /* Para evitar largura fixa */
+        font-size: 16px; /* Fonte mais legível em telas menores */
+    }
+
+    #name {
+        width: 80%; /* Aumenta o campo para mais espaço */
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
